@@ -1,0 +1,78 @@
+{
+  "mod_elements": [
+    {
+      "name": "SpawnMobAsSpawnerHead",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spawn_mob_as_spawner_head",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/spawnerheadremastered/procedures/SpawnMobAsSpawnerHeadProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ConfigProcedure",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "config_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/spawnerheadremastered/ConfigProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Config",
+      "type": "file",
+      "scope": "global",
+      "value": "new File(\"\")"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "spawner_head_remastered.configuration.spawner_heads": "spawner_heads",
+      "spawner_head_remastered.configuration.spawn_options": "spawn_options"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/spawnerheadremastered/network/SpawnerHeadRemasteredModVariables.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/spawnerheadremastered/SpawnerHeadRemasteredMod.java",
+      "src/main/java/net/mcreator/spawnerheadremastered/client/RenderUtils.java",
+      "src/main/java/net/mcreator/spawnerheadremastered/network/NbtArrayLists.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "spawner_head_remastered",
+    "modName": "Spawner Head Remastered",
+    "version": "0.0.0",
+    "description": "This mod is an *unofficial* version of the mod Spawner Head that adds a new mob: the Spawner Head. This is an updated version for more modern versions of Minecraft, with extra features.",
+    "author": "Sekaus",
+    "license": "Apache License version 2.0",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.spawnerheadremastered"
+  },
+  "mcreatorVersion": 202600114619
+}

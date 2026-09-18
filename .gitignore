@@ -1,0 +1,25 @@
+*.bat
+gradlew
+*.mcreator-backup_*
+.mcreator/userSettings
+
+# Binary filter
+
+*.gz
+*.jar
+*.bin
+*.lock
+*/generatorGradleCache
+*$*
+*.imgmeta
+
+# folder filter
+
+gradle/*
+.gradle/*
+run/*
+build/*
+!build/resources
+.eclipse/*
+spawner_head_remastered/.mcreator
+*/modElementThumbnails/*
