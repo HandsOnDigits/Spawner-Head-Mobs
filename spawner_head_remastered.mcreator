@@ -24,6 +24,30 @@
           "src/main/java/net/mcreator/spawnerheadremastered/ConfigProcedure.java"
         ]
       }
+    },
+    {
+      "name": "SpawnMobAsSpawnerHeadProcedure",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spawn_mob_as_spawner_head_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/spawnerheadremastered/SpawnMobAsSpawnerHeadProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "SpawnerHeadTickProcedure",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spawner_head_tick_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/spawnerheadremastered/SpawnerHeadTickProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [

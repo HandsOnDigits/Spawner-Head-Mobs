@@ -12,31 +12,27 @@ import net.minecraft.world.entity.Mob;
 @EventBusSubscriber
 public class SpawnMobAsSpawnerHeadProcedure {
 
-	public static final String SPAWNER_HEAD_TAG = "IsSpawnerHeadMob";
-	public static final String TIMER_TAG = "SpawnerHeadTimer";
-	public static final String BASE_TYPE_TAG = "SpawnerHeadBaseType";
-
-	// Interval between mob swaps in ticks (20 ticks = 1 second, 100 ticks = 5 seconds)
-	public static final int SWAP_INTERVAL_TICKS = 100;
+	public static final String IS_SPAWNER_HOST = "IsSpawnerHeadHost";
+	public static final String SPAWNER_TIMER = "SpawnerHeadTimer";
+	
+	// Interval between spawns in ticks (100 ticks = 5 seconds)
+	public static final int SPAWN_INTERVAL_TICKS = 100;
 
 	@SubscribeEvent
 	public static void onEntityFinalizeSpawn(FinalizeSpawnEvent event) {
 		Mob mob = event.getEntity();
 
-		if (event.getLevel().isClientSide() || mob.getPersistentData().getBoolean(SPAWNER_HEAD_TAG)) {
+		if (event.getLevel().isClientSide() || mob.getPersistentData().getBoolean(IS_SPAWNER_HOST)) {
 			return;
 		}
 
 		double spawnerHeadChance = ConfigProcedure.getSpawnerHeadChance();
 		if (Math.random() < spawnerHeadChance) {
-			// Mark entity as a spawner head mob and track original base ID
-			mob.getPersistentData().putBoolean(SPAWNER_HEAD_TAG, true);
-			mob.getPersistentData().putInt(TIMER_TAG, SWAP_INTERVAL_TICKS);
-			
-			String baseRegistryName = net.minecraft.core.registries.BuiltInRegistries.ENTITY_TYPE.getKey(mob.getType()).toString();
-			mob.getPersistentData().putString(BASE_TYPE_TAG, baseRegistryName);
+			// Mark as a host entity that spawns other mobs
+			mob.getPersistentData().putBoolean(IS_SPAWNER_HOST, true);
+			mob.getPersistentData().putInt(SPAWNER_TIMER, SPAWN_INTERVAL_TICKS);
 
-			// Equip spawner block
+			// Equip spawner block visual on host's head
 			mob.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Blocks.SPAWNER));
 			mob.setDropChance(EquipmentSlot.HEAD, 0.0F);
 		}
