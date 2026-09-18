@@ -48,6 +48,36 @@
           "src/main/java/net/mcreator/spawnerheadremastered/SpawnerHeadTickProcedure.java"
         ]
       }
+    },
+    {
+      "name": "SpawnerHeadParticalEmitter",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spawner_head_partical_emitter",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/spawnerheadremastered/procedures/SpawnerHeadParticalEmitterProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [

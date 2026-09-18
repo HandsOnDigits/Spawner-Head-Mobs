@@ -46,19 +46,68 @@ public class ConfigProcedure {
 					    {
 					      "id": "minecraft:zombie",
 					      "random_mobs_to_spawn": [
-					        { "id": "minecraft:zombie", "weight": 60 },
-					        { "id": "minecraft:skeleton", "weight": 20 },
-					        { "id": "minecraft:creeper", "weight": 15 },
-					        { "id": "minecraft:witch", "weight": 5 }
+					        { "id": "minecraft:silverfish", "weight": 50 },
+					        { "id": "minecraft:zombie", "weight": 30 },
+					        { "id": "minecraft:husk", "weight": 10 },
+					        { "id": "minecraft:spider", "weight": 10 }
 					      ]
 					    },
 					    {
 					      "id": "minecraft:skeleton",
 					      "random_mobs_to_spawn": [
-					        { "id": "minecraft:skeleton", "weight": 60 },
-					        { "id": "minecraft:zombie", "weight": 20 },
-					        { "id": "minecraft:spider", "weight": 15 },
-					        { "id": "minecraft:enderman", "weight": 5 }
+					        { "id": "minecraft:silverfish", "weight": 50 },
+					        { "id": "minecraft:skeleton", "weight": 30 },
+					        { "id": "minecraft:stray", "weight": 10 },
+					        { "id": "minecraft:spider", "weight": 10 }
+					      ]
+					    },
+					    {
+					      "id": "minecraft:drowned",
+					      "random_mobs_to_spawn": [
+					        { "id": "minecraft:tadpole", "weight": 50 },
+					        { "id": "minecraft:drowned", "weight": 30 },
+					        { "id": "minecraft:pufferfish", "weight": 20 }
+					        
+					      ]
+					    },
+					    {
+					      "id": "minecraft:husk",
+					      "random_mobs_to_spawn": [
+					        { "id": "minecraft:silverfish", "weight": 50 },
+					        { "id": "minecraft:husk", "weight": 30 },
+					        { "id": "minecraft:zombie", "weight": 20 }
+					      ]
+					    },
+					    {
+					      "id": "minecraft:stray",
+					      "random_mobs_to_spawn": [
+					        { "id": "minecraft:silverfish", "weight": 50 },
+					        { "id": "minecraft:stray", "weight": 30 },
+					        { "id": "minecraft:skeleton", "weight": 20 }
+					      ]
+					    },
+					    {
+					      "id": "minecraft:piglin",
+					      "random_mobs_to_spawn": [
+					        { "id": "minecraft:magma_cube", "weight": 50 },
+					        { "id": "minecraft:piglin", "weight": 30 },
+					        { "id": "minecraft:silverfish", "weight": 20 }
+					      ]
+					    },
+					    {
+					      "id": "minecraft:piglin_brute",
+					      "random_mobs_to_spawn": [
+					        { "id": "minecraft:magma_cube", "weight": 50 },
+					        { "id": "minecraft:piglin_brute", "weight": 30 },
+					        { "id": "minecraft:hoglin", "weight": 20 }
+					      ]
+					    },
+					    {
+					      "id": "minecraft:wither_skeleton",
+					      "random_mobs_to_spawn": [
+					        { "id": "minecraft:wither_skeleton", "weight": 50 },
+					        { "id": "minecraft:magma_cube", "weight": 30 },
+					        { "id": "minecraft:skeleton", "weight": 20 }
 					      ]
 					    }
 					  ]
