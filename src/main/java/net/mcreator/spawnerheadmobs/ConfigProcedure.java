@@ -1,4 +1,4 @@
-package net.mcreator.spawnerheadremastered.procedures;
+package net.mcreator.spawnerheadmobs.procedures;
 
 import net.neoforged.fml.loading.FMLPaths;
 
@@ -26,7 +26,7 @@ public class ConfigProcedure {
 	public static synchronized void setupFileOnDisk() {
 		try {
 			// Explicitly target the JSON file path inside the config directory
-			Path configPath = FMLPaths.CONFIGDIR.get().resolve("spawner_head_remastered.json");
+			Path configPath = FMLPaths.CONFIGDIR.get().resolve("spawner_head_mobs.json");
 			File targetFile = configPath.toFile();
 
 			// Ensure parent folder exists

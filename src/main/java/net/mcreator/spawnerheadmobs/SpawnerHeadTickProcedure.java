@@ -1,4 +1,4 @@
-package net.mcreator.spawnerheadremastered.procedures;
+package net.mcreator.spawnerheadmobs.procedures;
 
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
