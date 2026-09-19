@@ -1,4 +1,4 @@
-package net.mcreator.spawnerheadremastered.network;
+package net.mcreator.spawnerheadmobs.network;
 
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -7,13 +7,13 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
-import net.mcreator.spawnerheadremastered.SpawnerHeadRemasteredMod;
+import net.mcreator.spawnerheadmobs.SpawnerHeadMobsMod;
 
 import java.io.File;
 
 @EventBusSubscriber
-public class SpawnerHeadRemasteredModVariables {
-	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, SpawnerHeadRemasteredMod.MODID);
+public class SpawnerHeadMobsModVariables {
+	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, SpawnerHeadMobsMod.MODID);
 	public static File Config = new File("");
 
 	@SubscribeEvent

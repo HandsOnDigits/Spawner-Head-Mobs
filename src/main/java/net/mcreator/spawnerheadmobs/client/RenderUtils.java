@@ -1,4 +1,4 @@
-package net.mcreator.spawnerheadremastered.client;
+package net.mcreator.spawnerheadmobs.client;
 
 import org.joml.Matrix4f;
 

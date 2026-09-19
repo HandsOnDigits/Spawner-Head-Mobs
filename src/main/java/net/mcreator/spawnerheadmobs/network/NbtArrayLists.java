@@ -5,7 +5,7 @@
  * This code is free software; you can redistribute it and/or modify it
  * under the terms of the MIT License
  */
-package net.mcreator.spawnerheadremastered.network;
+package net.mcreator.spawnerheadmobs.network;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.block.state.BlockState;

@@ -3,13 +3,13 @@ loaderVersion="[4,)"
 license="Apache License version 2.0"
 
 [[mods]]
-modId="spawner_head_remastered"
+modId="spawner_head_mobs"
 version="0.0.0"
-displayName="Spawner Head Remastered"
+displayName="Spawner Head Mobs"
 displayURL="https://mcreator.net"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 authors="Sekaus"
-description="This mod is an *unofficial* version of the mod Spawner Head that adds a new mob: the Spawner Head. This is an updated version for more modern versions of Minecraft, with extra features."
+description="is a mod that introduces special mob variants wearing active Mob Spawner blocks!"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
@@ -18,14 +18,14 @@ description="This mod is an *unofficial* version of the mod Spawner Head that ad
 # Start of user code block custom mixins
 # End of user code block custom mixins
 
-[[dependencies.spawner_head_remastered]]
+[[dependencies.spawner_head_mobs]]
     modId="neoforge"
     type="required"
     versionRange="[21.1.190,)"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.spawner_head_remastered]]
+[[dependencies.spawner_head_mobs]]
     modId="minecraft"
     type="required"
     versionRange="[1.21.1]"

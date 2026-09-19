@@ -1,4 +1,4 @@
-package net.mcreator.spawnerheadremastered;
+package net.mcreator.spawnerheadmobs;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
@@ -25,7 +25,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.registries.BuiltInRegistries;
 
-import net.mcreator.spawnerheadremastered.network.SpawnerHeadRemasteredModVariables;
+import net.mcreator.spawnerheadmobs.network.SpawnerHeadMobsModVariables;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Queue;
@@ -37,17 +37,17 @@ import java.util.Comparator;
 import it.unimi.dsi.fastutil.ints.IntObjectPair;
 import it.unimi.dsi.fastutil.ints.IntObjectImmutablePair;
 
-@Mod("spawner_head_remastered")
-public class SpawnerHeadRemasteredMod {
-	public static final Logger LOGGER = LogManager.getLogger(SpawnerHeadRemasteredMod.class);
-	public static final String MODID = "spawner_head_remastered";
+@Mod("spawner_head_mobs")
+public class SpawnerHeadMobsMod {
+	public static final Logger LOGGER = LogManager.getLogger(SpawnerHeadMobsMod.class);
+	public static final String MODID = "spawner_head_mobs";
 
-	public SpawnerHeadRemasteredMod(IEventBus modEventBus) {
+	public SpawnerHeadMobsMod(IEventBus modEventBus) {
 		// Start of user code block mod constructor
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
-		SpawnerHeadRemasteredModVariables.ATTACHMENT_TYPES.register(modEventBus);
+		SpawnerHeadMobsModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
